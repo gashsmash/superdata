@@ -17,17 +17,23 @@ int main (){
 	double *v;
 	double sum;
 	double difference;
+	int k;
+	int kMax = 14;
+	int kTemp;
 	
-	printf("Enter vector length: ");
-	scanf("%d", &n);
+//	printf("Enter vector length: ");
+//	scanf("%d", &n);
 
-	v = generateVectorV(n);
+	for (k=3; k<=kMax; k++){
+		n = pow(2,k); 			//gcc code.c -lm -o code
+		v = generateVectorV(n);
+		sum = computeSum(v,n);
+		printf("Sum: %f \n",sum);
+		difference = computeDifference(sum,n);
+		printf("%f \n",difference);
+	}
 	//printVector(v,n);
-	sum = computeSum(v,n);
-	difference = computeDifference(sum,n);
-	printf("%f \n",difference);
 }
-
 
 
 // Functions
@@ -50,7 +56,7 @@ double computeSum(double *vector, int n){
 }
 
 double computeDifference(double sum, int n){
-	double difference = M_PI - sum;
+	double difference = pow(M_PI,2)/6 - sum;
 	return difference;
 }
 
