@@ -23,8 +23,9 @@ int main (){
 	
 //	printf("Enter vector length: ");
 //	scanf("%d", &n);
-
-	for (k=3; k<=kMax; k++){
+	
+	#pragma omp parallel for schedule (dynamic)
+	for (k=3; k<kMax; k++){
 		n = pow(2,k); 			//gcc code.c -lm -o code
 		v = generateVectorV(n);
 		sum = computeSum(v,n);
