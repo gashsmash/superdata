@@ -6,6 +6,7 @@
 // Initialize functions
 double *generateVectorV(int n);
 double computeSum(double *vector, int n);
+double computeDifference(double sum, int n);
 // Initialize help-functions
 void printVector(double *vector, int n);
 
@@ -15,6 +16,7 @@ int main (){
 	int n;
 	double *v;
 	double sum;
+	double difference;
 	
 	printf("Enter vector length: ");
 	scanf("%d", &n);
@@ -22,7 +24,8 @@ int main (){
 	v = generateVectorV(n);
 	//printVector(v,n);
 	sum = computeSum(v,n);
-	printf("%f \n",sum);
+	difference = computeDifference(sum,n);
+	printf("%f \n",difference);
 }
 
 
@@ -44,6 +47,11 @@ double computeSum(double *vector, int n){
 	for (i=0; i<n; i++){
 		sum += vector[i];
 	}
+}
+
+double computeDifference(double sum, int n){
+	double difference = M_PI - sum;
+	return difference;
 }
 
 
