@@ -1,0 +1,2 @@
+compile:  mpic++ name.cpp
+kjør   :  mpirun -np antallprosessorer ./filnavn
