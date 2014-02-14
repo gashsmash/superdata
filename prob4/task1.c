@@ -25,7 +25,7 @@ int main (){
 //	printf("Enter vector length: ");
 //	scanf("%d", &n);
 
-	#pragma omp parallel for schedule(dynamic)
+	//#pragma omp parallel for schedule(dynamic)
 	for (k=3; k<kMax; k++){
 		n = pow(2,k); 			//gcc code.c -lm -o code
 		v = generateVectorV(n);
@@ -43,6 +43,7 @@ int main (){
 double *generateVectorV(int n){
 	double *v = malloc(n*sizeof(int));
 	int i;
+	#pragma omp parallel for schedule(static)
 	for (i=1; i<=n; i++){
 		v[i-1] = 1/pow(i,2);
 	}
@@ -52,6 +53,7 @@ double *generateVectorV(int n){
 double computeSum(double *vector, int n){
 	double sum = 0;
 	int i;
+	#pragma omp parallel for schedule(static) reduction(+:sum)
 	for (i=0; i<n; i++){
 		sum += vector[i];
 	}

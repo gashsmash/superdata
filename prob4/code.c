@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <math.h>
 
+#include <omp.h>
+
 // Initialize functions
 double *generateVectorV(int n);
 double computeSum(double *vector, int n);
