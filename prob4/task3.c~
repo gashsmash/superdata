@@ -19,7 +19,7 @@ void printVector(double *vector, int n);
 
 int main (int argc, char **argv){
 	// Initialize variables
-	int n, k, kMax = 5;
+	int n, k, kMax = 10;
 	double *v, sum, difference;
 	// Variables used for MPI
 	int rank, size, tag, i;
