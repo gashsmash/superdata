@@ -30,9 +30,8 @@ int main (){
 		n = pow(2,k); 			//gcc code.c -lm -o code
 		v = generateVectorV(n);
 		sum = computeSum(v,n);
-		printf("Sum: %f \n",sum);
 		difference = computeDifference(sum,n);
-		printf("%f \n",difference);
+		printf("\nSum with k=%d : %f .\tDifference = %f\n", k, sum, difference);
 	}
 	//printVector(v,n);
 }
@@ -41,9 +40,9 @@ int main (){
 // Functions
 
 double *generateVectorV(int n){
-	double *v = malloc(n*sizeof(int));
+	double *v = malloc(n*sizeof(double));
 	int i;
-	#pragma omp parallel for schedule(static)
+	//#pragma omp parallel for schedule(static)
 	for (i=1; i<=n; i++){
 		v[i-1] = 1/pow(i,2);
 	}
@@ -53,9 +52,11 @@ double *generateVectorV(int n){
 double computeSum(double *vector, int n){
 	double sum = 0;
 	int i;
+	//#pragma omp parallel for schedule(static) reduction(+:sum)
 	for (i=0; i<n; i++){
 		sum += vector[i];
 	}
+	return sum;
 }
 
 double computeDifference(double sum, int n){
