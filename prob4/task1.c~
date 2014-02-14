@@ -25,6 +25,7 @@ int main (){
 //	printf("Enter vector length: ");
 //	scanf("%d", &n);
 
+	double start = omp_get_wtime();
 	//#pragma omp parallel for schedule(dynamic)
 	for (k=3; k<kMax; k++){
 		n = pow(2,k); 			//gcc code.c -lm -o code
@@ -34,6 +35,9 @@ int main (){
 		printf("\nSum with k=%d : %f .\tDifference = %f\n", k, sum, difference);
 	}
 	//printVector(v,n);
+	clock_t	toc = clock();
+	
+	printf("Time elapsed: %f seconds\n",omp_get_wtime()-start);
 }
 
 
