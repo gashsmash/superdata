@@ -30,9 +30,10 @@ int main (){
 		sum = computeSum(v,n);
 		difference = computeDifference(sum,n);
 		printf("\nOn thread %d\tSum with k=%d : %f .\tDifference = %f\n", omp_get_thread_num(), k, sum, difference);
+		free(v);
 	}
 
-	printf("Time elapsed: %f seconds\n",omp_get_wtime()-start);
+	printf("Time elapsed: %f seconds using %d threads\n",omp_get_wtime()-start, omp_get_max_threads());
 	
 }
 
@@ -63,7 +64,7 @@ double computeSum(double *vector, int n){
 }
 
 double computeDifference(double sum, int n){
-	double difference = pow(M_PI,2)/6 - sum;
+	double difference = M_PI*M_PI/6 - sum;
 	return difference;
 }
 

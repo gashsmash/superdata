@@ -32,8 +32,6 @@ int main (){
 		printf("\nSum with k=%d : %f .\tDifference = %f\n", k, sum, difference);
 	}
 	
-	clock_t	toc = clock();
-	
 	printf("Time elapsed: %f seconds\n",omp_get_wtime()-start);
 }
 
@@ -45,7 +43,7 @@ double *generateVectorV(int n){
 	int i;
 	
 	for (i=1; i<=n; i++){
-		v[i-1] = 1/pow(i,2);
+		v[i-1] = 1/(i*i);
 	}
 	return v;
 }

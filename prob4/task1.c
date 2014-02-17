@@ -43,7 +43,7 @@ double *generateVectorV(int n){
 	int i;
 	
 	for (i=1; i<=n; i++){
-		v[i-1] = 1/pow(i,2);
+		v[i-1] = 1/(i*i);
 	}
 	return v;
 }
@@ -59,7 +59,7 @@ double computeSum(double *vector, int n){
 }
 
 double computeDifference(double sum, int n){
-	double difference = pow(M_PI,2)/6 - sum;
+	double difference = M_PI*M_PI/6 - sum;
 	return difference;
 }
 
