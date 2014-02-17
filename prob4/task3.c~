@@ -19,10 +19,10 @@ void printVector(double *vector, int n);
 
 int main (int argc, char **argv){
 	// Initialize variables
-	int n, k, kMax = 5;
-	double *v, sum, difference;
+	int n, k, kMax = 10;
+	double sum, difference, partial_sum;
 	// Variables used for MPI
-	int rank, size, tag, i;
+	int rank, size, tag, i, block_size;
 	MPI_Status status;
 	
 	MPI_Init(&argc, &argv);
@@ -30,14 +30,28 @@ int main (int argc, char **argv){
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 	
 	
-
 	for (k=3; k<kMax; k++){
-		n = pow(2,k); 			//gcc code.c -lm -o code
-		v = generateVectorV(n);
-		sum = computeSum(v,n);
+		n = pow(2,k);
+		block_size = n/size;
+		double *v = malloc(n*sizeof(double));
+		double *partial_v = malloc(block_size*sizeof(double));
+
+		if (rank == 0) {
+			v = generateVectorV(n);
+		}
 		
+		MPI_Scatter(v, block_size, MPI_DOUBLE, partial_v, block_size, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+		partial_sum = computeSum(partial_v, block_size);
+		//printf("proc %i computed: %f \n", rank, partial_sum);
+		
+		//printf("%i: %f \t %f \n", rank, partial_v[0],partial_v[1]);
+		
+		MPI_Reduce(&partial_sum, &sum, 1, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
+		
+		if (rank == 0) {
 		difference = computeDifference(sum,n);
-		printf("%f \n",difference);
+		printf("Difference:  %f \n",difference);
+		}
 	}
 	MPI_Finalize();
 
@@ -50,7 +64,8 @@ double *generateVectorV(int n){
 	double *v = malloc(n*sizeof(double));
 	int i;
 	for (i=1; i<=n; i++){
-		v[i-1] = 1/pow(i,2);
+		v[i-1] = pow(i,-2);
+		//printf("v element %i is %f \n",i-1, v[i-1]);
 	}
 	return v;
 }
@@ -58,7 +73,6 @@ double *generateVectorV(int n){
 double computeSum(double *vector, int n){
 	double sum = 0;
 	int i;
-
 	for (i=0; i<n; i++){
 		sum += vector[i];
 	}
