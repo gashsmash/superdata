@@ -21,12 +21,9 @@ int main (){
 	int k;
 	int kMax = 14;
 	int kTemp;
-	
-//	printf("Enter vector length: ");
-//	scanf("%d", &n);
 
 	double start = omp_get_wtime();
-	//#pragma omp parallel for schedule(dynamic)
+	
 	for (k=3; k<kMax; k++){
 		n = pow(2,k); 			//gcc code.c -lm -o code
 		v = generateVectorV(n);
@@ -34,7 +31,7 @@ int main (){
 		difference = computeDifference(sum,n);
 		printf("\nSum with k=%d : %f .\tDifference = %f\n", k, sum, difference);
 	}
-	//printVector(v,n);
+	
 	clock_t	toc = clock();
 	
 	printf("Time elapsed: %f seconds\n",omp_get_wtime()-start);
@@ -46,7 +43,7 @@ int main (){
 double *generateVectorV(int n){
 	double *v = malloc(n*sizeof(double));
 	int i;
-	//#pragma omp parallel for schedule(static)
+	
 	for (i=1; i<=n; i++){
 		v[i-1] = 1/pow(i,2);
 	}
@@ -56,7 +53,7 @@ double *generateVectorV(int n){
 double computeSum(double *vector, int n){
 	double sum = 0;
 	int i;
-	//#pragma omp parallel for schedule(static) reduction(+:sum)
+	
 	for (i=0; i<n; i++){
 		sum += vector[i];
 	}

@@ -24,7 +24,6 @@ int main (){
 	
 	double start = omp_get_wtime();
 	
-	//#pragma omp parallel for schedule(dynamic)
 	for (k=3; k<kMax; k++){
 		n = pow(2,k); 			//gcc code.c -lm -o code
 		v = generateVectorV(n);
@@ -32,8 +31,7 @@ int main (){
 		difference = computeDifference(sum,n);
 		printf("\nOn thread %d\tSum with k=%d : %f .\tDifference = %f\n", omp_get_thread_num(), k, sum, difference);
 	}
-	clock_t	toc = clock();
-	
+
 	printf("Time elapsed: %f seconds\n",omp_get_wtime()-start);
 	
 }

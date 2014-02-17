@@ -32,8 +32,6 @@ int main (){
 		printf("\nSum with k=%d : %f .\tDifference = %f\n", k, sum, difference);
 	}
 	
-	clock_t	toc = clock();
-	
 	printf("Time elapsed: %f seconds\n",omp_get_wtime()-start);
 }
 
