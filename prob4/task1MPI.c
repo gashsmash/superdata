@@ -1,0 +1,99 @@
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+#include <stdlib.h>
+#include <math.h>
+
+#include <omp.h>
+#include "mpi/mpi.h"
+#include "openmpi/mpi.h"
+
+
+// Initialize functions
+double *generateVectorV(int n);
+double computeSum(double *vector, int n);
+double computeDifference(double sum, int n);
+// Initialize help-functions
+void printVector(double *vector, int n);
+
+
+int main (int argc, char **argv){
+	// Initialize variables
+	int n, k, kMax = 14;
+	double sum, difference, partial_sum;
+	// Variables used for MPI
+	int rank, size, tag, i, block_size;
+	MPI_Status status;
+	
+	MPI_Init(&argc, &argv);
+	MPI_Comm_size(MPI_COMM_WORLD, &size);
+	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+	
+	
+	for (k=3; k<kMax; k++){
+		n = pow(2,k);
+		block_size = n/size;
+		double *v = malloc(n*sizeof(double));
+		double *partial_v = malloc(block_size*sizeof(double));
+
+		if (rank == 0) {
+			v = generateVectorV(n);
+		}
+		
+		MPI_Scatter(v, block_size, MPI_DOUBLE, partial_v, block_size, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+		partial_sum = computeSum(partial_v, block_size);
+		//printf("proc %i computed: %f \n", rank, partial_sum);
+		
+		//printf("%i: %f \t %f \n", rank, partial_v[0],partial_v[1]);
+		
+		MPI_Reduce(&partial_sum, &sum, 1, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
+		
+		if (rank == 0) {
+		difference = computeDifference(sum,n);
+		printf("Difference:  %f \n",difference);
+		}
+	}
+	MPI_Finalize();
+
+}
+
+
+// Functions
+
+double *generateVectorV(int n){
+	double *v = malloc(n*sizeof(double));
+	int i;
+	for (i=1; i<=n; i++){
+		v[i-1] = 1.0/i*i;
+		//printf("v element %i is %f \n",i-1, v[i-1]);
+	}
+	return v;
+}
+
+double computeSum(double *vector, int n){
+	double sum = 0;
+	int i;
+	for (i=0; i<n; i++){
+		sum += vector[i];
+	}
+	return sum;
+}
+
+double computeDifference(double sum, int n){
+	double difference = M_PI*M_PI/6 - sum;
+	return difference;
+}
+
+
+// Help-functions
+
+void printVector(double *vector, int n){
+	int i;
+	for (i=0; i<n; i++){
+		printf("%f \n", vector[i]);
+	}
+}
+
+// Compilering:	mpicc task3.c -o task3
+// Kjøring: 	mpiexec -n 80 ./task3
+

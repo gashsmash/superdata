@@ -29,7 +29,7 @@ int main (){
 		v = generateVectorV(n);
 		sum = computeSum(v,n);
 		difference = computeDifference(sum,n);
-		printf("\nSum with k=%d : %f .\tDifference = %f\n", k, sum, difference);
+		printf("\nSum with k=%d : %.15f .\tDifference = %.15f\n", k, sum, difference);
 	}
 	
 	printf("Time elapsed: %f seconds\n",omp_get_wtime()-start);
@@ -43,7 +43,7 @@ double *generateVectorV(int n){
 	int i;
 	
 	for (i=1; i<=n; i++){
-		v[i-1] = 1/(i*i);
+		v[i-1] = 1.0/(i*i);
 	}
 	return v;
 }

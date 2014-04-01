@@ -29,7 +29,7 @@ int main (){
 		v = generateVectorV(n);
 		sum = computeSum(v,n);
 		difference = computeDifference(sum,n);
-		printf("\nOn thread %d\tSum with k=%d : %f .\tDifference = %f\n", omp_get_thread_num(), k, sum, difference);
+		printf("\nOn thread %d\tSum with k=%d : %.15f .\tDifference = %.15f\n", omp_get_thread_num(), k, sum, difference);
 		free(v);
 	}
 
