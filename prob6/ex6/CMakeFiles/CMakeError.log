@@ -1,0 +1,102 @@
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_progress_report /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/src.c.o
+/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/icc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec.dir/src.c.o   -c /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/src.c
+icc: command line warning #10006: ignoring unknown option '-fopenmp'
+/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/src.c(7): error: identifier "breaks_on_purpose" is undefined
+    breaks_on_purpose
+    ^
+
+/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/src.c(9): error: expected a ";"
+  }
+  ^
+
+compilation aborted for /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/src.c (code 2)
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/src.c.o] Error 2
+gmake[1]: Leaving directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_progress_report /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/src.c.o
+/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/icc   -DOpenMP_FLAG_DETECTED /openmp   -o CMakeFiles/cmTryCompileExec.dir/src.c.o   -c /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/src.c
+icc: error #10236: File not found:  '/openmp'
+/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/src.c(7): error: identifier "breaks_on_purpose" is undefined
+    breaks_on_purpose
+    ^
+
+/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/src.c(9): error: expected a ";"
+  }
+  ^
+
+compilation aborted for /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/src.c (code 2)
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/src.c.o] Error 1
+gmake[1]: Leaving directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_progress_report /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/src.c.o
+/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/icc   -DOpenMP_FLAG_DETECTED -Qopenmp   -o CMakeFiles/cmTryCompileExec.dir/src.c.o   -c /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/src.c
+icc: command line warning #10006: ignoring unknown option '-Qopenmp'
+/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/src.c(7): error: identifier "breaks_on_purpose" is undefined
+    breaks_on_purpose
+    ^
+
+/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/src.c(9): error: expected a ";"
+  }
+  ^
+
+compilation aborted for /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/src.c (code 2)
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/src.c.o] Error 2
+gmake[1]: Leaving directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+

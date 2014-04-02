@@ -1,0 +1,3 @@
+/home/siljeih/superdata/prob6/ex6/CMakeFiles/common.dir
+/home/siljeih/superdata/prob6/ex6/CMakeFiles/poisson.dir
+/home/siljeih/superdata/prob6/ex6/CMakeFiles/poisson-f.dir

@@ -1,0 +1,501 @@
+The system is: Linux - 2.6.18-308.1.1.el5 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/icc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is Intel, found in "/home/siljeih/superdata/prob6/ex6/CMakeFiles/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/siljeih/superdata/prob6/ex6/CMakeFiles/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_progress_report /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o
+/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/icc    -o CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o   -c /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/icc         CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_progress_report /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o
+/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/icc    -o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o   -c /gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/icc       -v CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec -rdynamic  
+Version 11.1 
+/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/mcpcom    -mP1OPT_version=11.1-intel64 -mGLOB_diag_file=CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.diag -mP1OPT_print_version=FALSE -mP3OPT_use_mspp_call_convention -mCG_use_gas_got_workaround=F -mP2OPT_align_option_used=TRUE "-mGLOB_options_string=-v -o cmTryCompileExec -rdynamic" -mGLOB_cxx_limited_range=FALSE -mGLOB_as_output_backup_file_name=/tmp/iccwEoiZIas_.s -mIPOPT_activate -mGLOB_machine_model=GLOB_MACHINE_MODEL_EFI2 -mIPOPT_args_in_regs=0 -mPGOPTI_value_profile_use=T -mP2OPT_hlo -mIPOPT_link -mIPOPT_ipo_activate -mIPOPT_ipo_mo_activate -mIPOPT_ipo_mo_nfiles=1 -mIPOPT_source_files_list=/tmp/iccAiGBrVlst -mIPOPT_global_data -mIPOPT_link_script_file=/tmp/iccY0nZhRscript "-mIPOPT_link_version=2.17.50.0.6-20.el5_8.3 20061020" "-mIPOPT_cmdline_link="/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crt1.o" "/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crti.o" "/usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtbegin.o" "-export-dynamic" "--eh-frame-hdr" "-dynamic-linker" "/lib64/ld-linux-x86-64.so.2" "-o" "cmTryCompileExec" "CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib" "-L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib" "-L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib" "-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2" "-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64" "-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../.." "-L/lib64" "-L/lib" "-L/usr/lib64" "-L/usr/lib" "-Bstatic" "-limf" "-lsvml" "-Bdynamic" "-lm" "-Bstatic" "-lipgo" "-ldecimal" "-Bdynamic" "-lgcc_s" "-lgcc" "-Bstatic" "-lirc" "-Bdynamic" "-lc" "-lgcc_s" "-lgcc" "-Bstatic" "-lirc_s" "-Bdynamic" "-ldl" "-lc" "/usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtend.o" "/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crtn.o"" -mIPOPT_il_in_obj -mIPOPT_ipo_activate_warn=FALSE -mIPOPT_obj_output_file_name=/tmp/ipo_iccjiSa4b.o "-mGLOB_linker_version=2.17.50.0.6-20.el5_8.3 20061020" -mP3OPT_asm_target=P3OPT_ASM_TARGET_GAS -mGLOB_obj_output_file=/tmp/ipo_iccjiSa4b.o -mP1OPT_source_file_name=ipo_out.c CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -mIPOPT_mo_unique_name=cmTryCompileExec -mIPOPT_object_files=/tmp/icc8S0vU7txt -mIPOPT_assembly_files=/tmp/iccoiTRK3txt -mIPOPT_cmdline_link_new=/tmp/iccgPveBZtxt
+ld    -export-dynamic --eh-frame-hdr -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec -L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64 -L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib -L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t -L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib -L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64 -L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64 -L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib -L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t -L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2 -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../.. -L/lib64 -L/lib -L/usr/lib64 -L/usr/lib /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtbegin.o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -Bstatic -limf -lsvml -Bdynamic -lm -Bstatic -lipgo -ldecimal -Bdynamic -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic -ldl -lc /usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crtn.o
+rm /tmp/iccrjploklibgcc
+
+rm /tmp/icc1p0Qdggnudirs
+
+rm /tmp/icc8S0vU7txt
+
+rm /tmp/iccoiTRK3txt
+
+rm /tmp/iccgPveBZtxt
+
+rm /tmp/iccAiGBrVlst
+
+rm /tmp/iccY0nZhRscript
+
+rm /tmp/ipo_iccjiSa4b.o
+
+rm /tmp/iccE0co8Mgas
+
+rm /tmp/iccwEoiZIas_.s
+
+rm /tmp/iccOEueQEldashv
+
+rm /tmp/iccnNOWHAgnudirs
+
+rm /tmp/iccOIbvAwarg
+
+gmake[1]: Leaving directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build]
+  ignore line: [gmake[1]: Entering directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp']
+  ignore line: [/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_progress_report /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/icc    -o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o   -c /gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec]
+  ignore line: [/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1]
+  ignore line: [/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/icc       -v CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec -rdynamic  ]
+  ignore line: [Version 11.1 ]
+  ignore line: [/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/mcpcom    -mP1OPT_version=11.1-intel64 -mGLOB_diag_file=CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.diag -mP1OPT_print_version=FALSE -mP3OPT_use_mspp_call_convention -mCG_use_gas_got_workaround=F -mP2OPT_align_option_used=TRUE "-mGLOB_options_string=-v -o cmTryCompileExec -rdynamic" -mGLOB_cxx_limited_range=FALSE -mGLOB_as_output_backup_file_name=/tmp/iccwEoiZIas_.s -mIPOPT_activate -mGLOB_machine_model=GLOB_MACHINE_MODEL_EFI2 -mIPOPT_args_in_regs=0 -mPGOPTI_value_profile_use=T -mP2OPT_hlo -mIPOPT_link -mIPOPT_ipo_activate -mIPOPT_ipo_mo_activate -mIPOPT_ipo_mo_nfiles=1 -mIPOPT_source_files_list=/tmp/iccAiGBrVlst -mIPOPT_global_data -mIPOPT_link_script_file=/tmp/iccY0nZhRscript "-mIPOPT_link_version=2.17.50.0.6-20.el5_8.3 20061020" "-mIPOPT_cmdline_link="/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crt1.o" "/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crti.o" "/usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtbegin.o" "-export-dynamic" "--eh-frame-hdr" "-dynamic-linker" "/lib64/ld-linux-x86-64.so.2" "-o" "cmTryCompileExec" "CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib" "-L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib" "-L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib" "-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2" "-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64" "-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../.." "-L/lib64" "-L/lib" "-L/usr/lib64" "-L/usr/lib" "-Bstatic" "-limf" "-lsvml" "-Bdynamic" "-lm" "-Bstatic" "-lipgo" "-ldecimal" "-Bdynamic" "-lgcc_s" "-lgcc" "-Bstatic" "-lirc" "-Bdynamic" "-lc" "-lgcc_s" "-lgcc" "-Bstatic" "-lirc_s" "-Bdynamic" "-ldl" "-lc" "/usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtend.o" "/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crtn.o"" -mIPOPT_il_in_obj -mIPOPT_ipo_activate_warn=FALSE -mIPOPT_obj_output_file_name=/tmp/ipo_iccjiSa4b.o "-mGLOB_linker_version=2.17.50.0.6-20.el5_8.3 20061020" -mP3OPT_asm_target=P3OPT_ASM_TARGET_GAS -mGLOB_obj_output_file=/tmp/ipo_iccjiSa4b.o -mP1OPT_source_file_name=ipo_out.c CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -mIPOPT_mo_unique_name=cmTryCompileExec -mIPOPT_object_files=/tmp/icc8S0vU7txt -mIPOPT_assembly_files=/tmp/iccoiTRK3txt -mIPOPT_cmdline_link_new=/tmp/iccgPveBZtxt]
+  link line: [ld    -export-dynamic --eh-frame-hdr -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec -L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64 -L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib -L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t -L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib -L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64 -L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64 -L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib -L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t -L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2 -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../.. -L/lib64 -L/lib -L/usr/lib64 -L/usr/lib /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtbegin.o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -Bstatic -limf -lsvml -Bdynamic -lm -Bstatic -lipgo -ldecimal -Bdynamic -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic -ldl -lc /usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crtn.o]
+    arg [ld] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec] ==> ignore
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64]
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib]
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t]
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib]
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64]
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64]
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib]
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t]
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.1.2]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../..]
+    arg [-L/lib64] ==> dir [/lib64]
+    arg [-L/lib] ==> dir [/lib]
+    arg [-L/usr/lib64] ==> dir [/usr/lib64]
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtbegin.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-Bstatic] ==> ignore
+    arg [-limf] ==> lib [imf]
+    arg [-lsvml] ==> lib [svml]
+    arg [-Bdynamic] ==> ignore
+    arg [-lm] ==> lib [m]
+    arg [-Bstatic] ==> ignore
+    arg [-lipgo] ==> lib [ipgo]
+    arg [-ldecimal] ==> lib [decimal]
+    arg [-Bdynamic] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-Bstatic] ==> ignore
+    arg [-lirc] ==> lib [irc]
+    arg [-Bdynamic] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-Bstatic] ==> ignore
+    arg [-lirc_s] ==> lib [irc_s]
+    arg [-Bdynamic] ==> ignore
+    arg [-ldl] ==> lib [dl]
+    arg [-lc] ==> lib [c]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/mkl/lib/em64t]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/mkl/lib/em64t]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib]
+  collapse dir [/usr/lib/gcc/x86_64-redhat-linux/4.1.2] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.1.2]
+  collapse dir [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64] ==> [/usr/lib64]
+  collapse dir [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../..] ==> [/usr/lib]
+  collapse dir [/lib64] ==> [/lib64]
+  collapse dir [/lib] ==> [/lib]
+  collapse dir [/usr/lib64] ==> [/usr/lib64]
+  collapse dir [/usr/lib] ==> [/usr/lib]
+  implicit libs: [imf;svml;m;ipgo;decimal;irc;c;irc_s;dl;c]
+  implicit dirs: [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64;/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib;/share/apps/modulessoftware/intel/compilers/11.1.059/mkl/lib/em64t;/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib;/usr/lib/gcc/x86_64-redhat-linux/4.1.2;/usr/lib64;/usr/lib;/lib64;/lib]
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_progress_report /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o -c /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++          CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_progress_report /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -c /gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++        -v CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec -rdynamic  
+Using built-in specs.
+Target: x86_64-redhat-linux
+Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-libgcj-multifile --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --disable-plugin --with-java-home=/usr/lib/jvm/java-1.4.2-gcj-1.4.2.0/jre --with-cpu=generic --host=x86_64-redhat-linux
+Thread model: posix
+gcc version 4.1.2 20080704 (Red Hat 4.1.2-52)
+ /usr/libexec/gcc/x86_64-redhat-linux/4.1.2/collect2 --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtbegin.o -L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64 -L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib -L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t -L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2 -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2 -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crtn.o
+gmake[1]: Leaving directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build]
+  ignore line: [gmake[1]: Entering directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp']
+  ignore line: [/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_progress_report /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -c /gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec]
+  ignore line: [/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++        -v CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-libgcj-multifile --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --disable-plugin --with-java-home=/usr/lib/jvm/java-1.4.2-gcj-1.4.2.0/jre --with-cpu=generic --host=x86_64-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.1.2 20080704 (Red Hat 4.1.2-52)]
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.1.2/collect2 --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtbegin.o -L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64 -L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib -L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t -L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2 -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2 -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/4.1.2/collect2] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtbegin.o] ==> ignore
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64]
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib]
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t]
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.1.2]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.1.2]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/mkl/lib/em64t]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib]
+  collapse dir [/usr/lib/gcc/x86_64-redhat-linux/4.1.2] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.1.2]
+  collapse dir [/usr/lib/gcc/x86_64-redhat-linux/4.1.2] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.1.2]
+  collapse dir [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64] ==> [/usr/lib64]
+  collapse dir [/lib/../lib64] ==> [/lib64]
+  collapse dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64;/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib;/share/apps/modulessoftware/intel/compilers/11.1.059/mkl/lib/em64t;/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib;/usr/lib/gcc/x86_64-redhat-linux/4.1.2;/usr/lib64;/lib64]
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" succeeded.
+Compiler: /share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/ifort 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.out"
+
+The Fortran compiler identification is Intel, found in "/home/siljeih/superdata/prob6/ex6/CMakeFiles/CompilerIdFortran/a.out"
+
+Determining if the Fortran compiler works passed with the following output:
+Change Dir: /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_progress_report /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building Fortran object CMakeFiles/cmTryCompileExec.dir/testFortranCompiler.f.o
+/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/ifort    -c /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/testFortranCompiler.f -o CMakeFiles/cmTryCompileExec.dir/testFortranCompiler.f.o
+Linking Fortran executable cmTryCompileExec
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/ifort         CMakeFiles/cmTryCompileExec.dir/testFortranCompiler.f.o  -o cmTryCompileExec -i_dynamic 
+gmake[1]: Leaving directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+
+
+Detecting Fortran compiler ABI info compiled with the following output:
+Change Dir: /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_progress_report /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building Fortran object CMakeFiles/cmTryCompileExec.dir/CMakeFortranCompilerABI.F.o
+/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/ifort    -c /gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/share/cmake-2.8/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTryCompileExec.dir/CMakeFortranCompilerABI.F.o
+Linking Fortran executable cmTryCompileExec
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/ifort   -v     CMakeFiles/cmTryCompileExec.dir/CMakeFortranCompilerABI.F.o  -o cmTryCompileExec -i_dynamic  
+Version 11.1 
+/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/fortcom    -mP1OPT_version=11.1-intel64 -mGLOB_diag_file=CMakeFiles/cmTryCompileExec.dir/CMakeFortranCompilerABI.F.diag -mGLOB_source_language=GLOB_SOURCE_LANGUAGE_F90 -mGLOB_tune_for_fort -mGLOB_use_fort_dope_vector -mP2OPT_static_promotion -mP1OPT_print_version=FALSE -mP3OPT_use_mspp_call_convention -mCG_use_gas_got_workaround=F -mP2OPT_align_option_used=TRUE "-mGLOB_options_string=-v -o cmTryCompileExec -i_dynamic" -mGLOB_cxx_limited_range=FALSE -mGLOB_as_output_backup_file_name=/tmp/ifort0vWet6as_.s -mIPOPT_activate -mGLOB_machine_model=GLOB_MACHINE_MODEL_EFI2 -mP2OPT_subs_out_of_bound=FALSE -mGLOB_ansi_alias -mIPOPT_args_in_regs=0 -mPGOPTI_value_profile_use=T -mP2OPT_hlo -mIPOPT_link -mIPOPT_ipo_activate -mIPOPT_ipo_mo_activate -mIPOPT_ipo_mo_nfiles=1 -mIPOPT_source_files_list=/tmp/ifortFsNYZPlst -mIPOPT_global_data -mIPOPT_link_script_file=/tmp/ifortMhbduVscript "-mIPOPT_link_version=2.17.50.0.6-20.el5_8.3 20061020" "-mIPOPT_cmdline_link="/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crt1.o" "/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crti.o" "/usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtbegin.o" "--eh-frame-hdr" "-dynamic-linker" "/lib64/ld-linux-x86-64.so.2" "-o" "cmTryCompileExec" "/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64/for_main.o" "CMakeFiles/cmTryCompileExec.dir/CMakeFortranCompilerABI.F.o" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib" "-L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib" "-L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib" "-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2" "-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64" "-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../.." "-L/lib64" "-L/lib" "-L/usr/lib64" "-L/usr/lib" "-lifport" "-lifcore" "-limf" "-lsvml" "-lm" "-lipgo" "-lintlc" "-u" "__pthread_once" "-lpthread" "-lc" "-lgcc_s" "-lgcc" "-lirc_s" "-ldl" "-lc" "/usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtend.o" "/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crtn.o"" -mIPOPT_il_in_obj -mIPOPT_ipo_activate_warn=FALSE -mIPOPT_obj_output_file_name=/tmp/ipo_ifortOlca3t.o "-mGLOB_linker_version=2.17.50.0.6-20.el5_8.3 20061020" -mP3OPT_asm_target=P3OPT_ASM_TARGET_GAS -mGLOB_obj_output_file=/tmp/ipo_ifortOlca3t.o -mP1OPT_source_file_name=ipo_out.f CMakeFiles/cmTryCompileExec.dir/CMakeFortranCompilerABI.F.o -mIPOPT_mo_unique_name=cmTryCompileExec -mIPOPT_object_files=/tmp/ifortw5Jlxztxt -mIPOPT_assembly_files=/tmp/ifortbSXx1Etxt -mIPOPT_cmdline_link_new=/tmp/ifortGNYKvKtxt
+ld    --eh-frame-hdr -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec -L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64 -L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib -L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t -L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib -L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64 -L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64 -L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib -L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t -L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2 -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../.. -L/lib64 -L/lib -L/usr/lib64 -L/usr/lib -u __pthread_once /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtbegin.o /share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64/for_main.o CMakeFiles/cmTryCompileExec.dir/CMakeFortranCompilerABI.F.o -lifport -lifcore -limf -lsvml -lm -lipgo -lintlc -lpthread -lc -lgcc_s -lgcc -lirc_s -ldl -lc /usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crtn.o
+rm /tmp/ifortp0QB5ilibgcc
+
+rm /tmp/ifortqc1Zyognudirs
+
+rm /tmp/ifortw5Jlxztxt
+
+rm /tmp/ifortbSXx1Etxt
+
+rm /tmp/ifortGNYKvKtxt
+
+rm /tmp/ifortFsNYZPlst
+
+rm /tmp/ifortMhbduVscript
+
+rm /tmp/ipo_ifortOlca3t.o
+
+rm /tmp/ifortlVDsY0gas
+
+rm /tmp/ifort0vWet6as_.s
+
+rm /tmp/ifort9tQ2Xbldashv
+
+rm /tmp/ifortPQQHthgnudirs
+
+rm /tmp/ifortMk4j1marg
+
+gmake[1]: Leaving directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+
+
+Parsed Fortran implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build]
+  ignore line: [gmake[1]: Entering directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp']
+  ignore line: [/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_progress_report /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building Fortran object CMakeFiles/cmTryCompileExec.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/ifort    -c /gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/share/cmake-2.8/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTryCompileExec.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [Linking Fortran executable cmTryCompileExec]
+  ignore line: [/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1]
+  ignore line: [/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/ifort   -v     CMakeFiles/cmTryCompileExec.dir/CMakeFortranCompilerABI.F.o  -o cmTryCompileExec -i_dynamic  ]
+  ignore line: [Version 11.1 ]
+  ignore line: [/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/fortcom    -mP1OPT_version=11.1-intel64 -mGLOB_diag_file=CMakeFiles/cmTryCompileExec.dir/CMakeFortranCompilerABI.F.diag -mGLOB_source_language=GLOB_SOURCE_LANGUAGE_F90 -mGLOB_tune_for_fort -mGLOB_use_fort_dope_vector -mP2OPT_static_promotion -mP1OPT_print_version=FALSE -mP3OPT_use_mspp_call_convention -mCG_use_gas_got_workaround=F -mP2OPT_align_option_used=TRUE "-mGLOB_options_string=-v -o cmTryCompileExec -i_dynamic" -mGLOB_cxx_limited_range=FALSE -mGLOB_as_output_backup_file_name=/tmp/ifort0vWet6as_.s -mIPOPT_activate -mGLOB_machine_model=GLOB_MACHINE_MODEL_EFI2 -mP2OPT_subs_out_of_bound=FALSE -mGLOB_ansi_alias -mIPOPT_args_in_regs=0 -mPGOPTI_value_profile_use=T -mP2OPT_hlo -mIPOPT_link -mIPOPT_ipo_activate -mIPOPT_ipo_mo_activate -mIPOPT_ipo_mo_nfiles=1 -mIPOPT_source_files_list=/tmp/ifortFsNYZPlst -mIPOPT_global_data -mIPOPT_link_script_file=/tmp/ifortMhbduVscript "-mIPOPT_link_version=2.17.50.0.6-20.el5_8.3 20061020" "-mIPOPT_cmdline_link="/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crt1.o" "/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crti.o" "/usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtbegin.o" "--eh-frame-hdr" "-dynamic-linker" "/lib64/ld-linux-x86-64.so.2" "-o" "cmTryCompileExec" "/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64/for_main.o" "CMakeFiles/cmTryCompileExec.dir/CMakeFortranCompilerABI.F.o" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib" "-L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib" "-L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t" "-L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib" "-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2" "-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64" "-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../.." "-L/lib64" "-L/lib" "-L/usr/lib64" "-L/usr/lib" "-lifport" "-lifcore" "-limf" "-lsvml" "-lm" "-lipgo" "-lintlc" "-u" "__pthread_once" "-lpthread" "-lc" "-lgcc_s" "-lgcc" "-lirc_s" "-ldl" "-lc" "/usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtend.o" "/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crtn.o"" -mIPOPT_il_in_obj -mIPOPT_ipo_activate_warn=FALSE -mIPOPT_obj_output_file_name=/tmp/ipo_ifortOlca3t.o "-mGLOB_linker_version=2.17.50.0.6-20.el5_8.3 20061020" -mP3OPT_asm_target=P3OPT_ASM_TARGET_GAS -mGLOB_obj_output_file=/tmp/ipo_ifortOlca3t.o -mP1OPT_source_file_name=ipo_out.f CMakeFiles/cmTryCompileExec.dir/CMakeFortranCompilerABI.F.o -mIPOPT_mo_unique_name=cmTryCompileExec -mIPOPT_object_files=/tmp/ifortw5Jlxztxt -mIPOPT_assembly_files=/tmp/ifortbSXx1Etxt -mIPOPT_cmdline_link_new=/tmp/ifortGNYKvKtxt]
+  link line: [ld    --eh-frame-hdr -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec -L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64 -L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib -L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t -L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib -L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64 -L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64 -L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib -L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t -L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2 -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../.. -L/lib64 -L/lib -L/usr/lib64 -L/usr/lib -u __pthread_once /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtbegin.o /share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64/for_main.o CMakeFiles/cmTryCompileExec.dir/CMakeFortranCompilerABI.F.o -lifport -lifcore -limf -lsvml -lm -lipgo -lintlc -lpthread -lc -lgcc_s -lgcc -lirc_s -ldl -lc /usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crtn.o]
+    arg [ld] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec] ==> ignore
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64]
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib]
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t]
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib]
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64]
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64]
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib]
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t]
+    arg [-L/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib] ==> dir [/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.1.2]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../..]
+    arg [-L/lib64] ==> dir [/lib64]
+    arg [-L/lib] ==> dir [/lib]
+    arg [-L/usr/lib64] ==> dir [/usr/lib64]
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [-u] ==> ignore
+    arg [__pthread_once] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtbegin.o] ==> ignore
+    arg [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64/for_main.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec.dir/CMakeFortranCompilerABI.F.o] ==> ignore
+    arg [-lifport] ==> lib [ifport]
+    arg [-lifcore] ==> lib [ifcore]
+    arg [-limf] ==> lib [imf]
+    arg [-lsvml] ==> lib [svml]
+    arg [-lm] ==> lib [m]
+    arg [-lipgo] ==> lib [ipgo]
+    arg [-lintlc] ==> lib [intlc]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lirc_s] ==> lib [irc_s]
+    arg [-ldl] ==> lib [dl]
+    arg [-lc] ==> lib [c]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/mkl/lib/em64t]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059//mkl/lib/em64t] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/mkl/lib/em64t]
+  collapse dir [/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib] ==> [/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib]
+  collapse dir [/usr/lib/gcc/x86_64-redhat-linux/4.1.2] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.1.2]
+  collapse dir [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../../../lib64] ==> [/usr/lib64]
+  collapse dir [/usr/lib/gcc/x86_64-redhat-linux/4.1.2/../../..] ==> [/usr/lib]
+  collapse dir [/lib64] ==> [/lib64]
+  collapse dir [/lib] ==> [/lib]
+  collapse dir [/usr/lib64] ==> [/usr/lib64]
+  collapse dir [/usr/lib] ==> [/usr/lib]
+  implicit libs: [ifport;ifcore;imf;svml;m;ipgo;intlc;pthread;c;irc_s;dl;c]
+  implicit dirs: [/share/apps/modulessoftware/intel/compilers/11.1.059/lib/intel64;/share/apps/modulessoftware/intel/compilers/11.1.059/ipp/em64t/lib;/share/apps/modulessoftware/intel/compilers/11.1.059/mkl/lib/em64t;/share/apps/modulessoftware/intel/compilers/11.1.059/tbb/intel64/cc4.1.0_libc2.4_kernel2.6.16.21/lib;/usr/lib/gcc/x86_64-redhat-linux/4.1.2;/usr/lib64;/usr/lib;/lib64;/lib]
+
+
+Determining if the Fortran compiler supports Fortran 90 passed with the following output:
+Change Dir: /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_progress_report /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building Fortran object CMakeFiles/cmTryCompileExec.dir/testFortranCompilerF90.f90.o
+/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/ifort    -c /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/testFortranCompilerF90.f90 -o CMakeFiles/cmTryCompileExec.dir/testFortranCompilerF90.f90.o
+Linking Fortran executable cmTryCompileExec
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/ifort         CMakeFiles/cmTryCompileExec.dir/testFortranCompilerF90.f90.o  -o cmTryCompileExec -i_dynamic 
+gmake[1]: Leaving directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_progress_report /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/src.c.o
+/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/icc   -DOpenMP_FLAG_DETECTED -openmp   -o CMakeFiles/cmTryCompileExec.dir/src.c.o   -c /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/icc     -DOpenMP_FLAG_DETECTED -openmp    CMakeFiles/cmTryCompileExec.dir/src.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_progress_report /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec
+/gpfs/shareapps/apps/modulessoftware/cmake/2.8.7/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++      -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec.dir/src.cxx.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/gpfs/home/siljeih/superdata/prob6/ex6/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+

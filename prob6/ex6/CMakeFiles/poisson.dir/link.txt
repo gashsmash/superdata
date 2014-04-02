@@ -1,0 +1,1 @@
+/share/apps/modulessoftware/intel/compilers/11.1.059/bin/intel64/icc   -openmp -O3 -DNDEBUG    CMakeFiles/poisson.dir/poisson.c.o  -o poisson -rdynamic libcommon.a /opt/openmpi/lib/libmpi.so /opt/openmpi/lib/libopen-rte.so /opt/openmpi/lib/libopen-pal.so -ldl -lnsl -lutil -lm -ldl -lnsl -lutil -lm -lifport -lifcore -lintlc -lpthread -Wl,-rpath,/opt/openmpi/lib 
