@@ -64,11 +64,13 @@ int main(int argc, char **argv )
   MPI_Finalize();
 
  // Make the diag vector
+  #pragma omp parallel for schedule(static)
   for (i=0; i < m; i++) {
     diag[i] = 2.*(1.-cos((i+1)*pi/(Real)n));
   }
  
  // Set all values of b to h^2
+  #pragma omp parallel for schedule(static)
   for (j=0; j < m; j++) {
     for (i=0; i < m; i++) {
       b[j][i] = h*h;
@@ -76,6 +78,7 @@ int main(int argc, char **argv )
   }
  
  // Preform a fast sine transform on b. One row at a time.
+  #pragma omp parallel for schedule(static)
   for (j=0; j < m; j++) {
     fst_(b[j], &n, z, &nn);
   }
@@ -84,11 +87,13 @@ int main(int argc, char **argv )
   transpose (bt,b,m);
 
  // Preform a inverse fast sine transform on bt
+  #pragma omp parallel for schedule(static)
   for (i=0; i < m; i++) {
     fstinv_(bt[i], &n, z, &nn);
   }
   
  // Divide bt on the eigenvalues 2)
+  #pragma omp parallel for schedule(static)
   for (j=0; j < m; j++) {
     for (i=0; i < m; i++) {
       bt[j][i] = bt[j][i]/(diag[i]+diag[j]);
@@ -96,6 +101,7 @@ int main(int argc, char **argv )
   }
   
  // Preforn a fast sine transform on b.
+  #pragma omp parallel for schedule(static)
   for (i=0; i < m; i++) {
     fst_(bt[i], &n, z, &nn);
   }
@@ -104,12 +110,14 @@ int main(int argc, char **argv )
   transpose (b,bt,m);
 
  // Preform  an inverse fast sine transform on bt
+  #pragma omp parallel for schedule(static)
   for (j=0; j < m; j++) {
     fstinv_(b[j], &n, z, &nn);
   }
 
  // Make the solution umax
   umax = 0.0;
+  #pragma omp parallel for schedule(static)
   for (j=0; j < m; j++) {
     for (i=0; i < m; i++) {
       if (b[j][i] > umax) umax = b[j][i];
@@ -124,6 +132,7 @@ int main(int argc, char **argv )
 void transpose (Real **bt, Real **b, int m)
 {
   int i, j;
+
   for (j=0; j < m; j++) {
     for (i=0; i < m; i++) {
      bt[j][i] = b[i][j];
